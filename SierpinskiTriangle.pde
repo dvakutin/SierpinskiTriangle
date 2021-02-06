@@ -1,6 +1,6 @@
 int col = color(106, 86, 235);
 int limit = 600;
-int globlen = 20;
+int globlen = 30;
 public void setup()
 {
   size(600, 600);
@@ -31,13 +31,13 @@ public void mouseDragged()
 {
   if(mouseX > pmouseX && globlen < 600)
   {
+    background(126, 140, 149);
     globlen = globlen + 2;
   }
   if(mouseX < pmouseX && globlen > 0)
   {
-    
-    globlen = globlen - 2;
     background(126, 140, 149);
+    globlen = globlen - 2;
   }
 }
 public void sierpinski(int x, int y, int len) 
